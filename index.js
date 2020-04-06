@@ -1,6 +1,8 @@
-const { Sum, Multiply, GetPrimes, GetFibonaccy } = require("./lib/numbering");
+const Numbering = require("./lib/numbering");
 
-console.log("Sum", Sum(3, 4));
-console.log("Multiply", Multiply(3, 4));
-console.log("GetPrimes", GetPrimes(4));
-console.log("GetFibonaccy", GetFibonaccy(4));
+const num = new Numbering();
+
+console.log("Sum", num.Sum(3, 4));
+console.log("Multiply", num.Multiply(3, 4));
+console.log("GetPrimes", num.GetPrimes(4));
+console.log("GetFibonaccy", num.GetFibonaccy(4));
